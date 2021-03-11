@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@drawable/login_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo_temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/WelcomeEye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#339989"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/WelcomeLead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeLead"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#D7263D"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/WelcomeEye"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/WelcomeLead2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeLead2"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#D7263D"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/WelcomeLead1"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/walking"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/eye_walk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/WelcomeLead2"
+        android:focusable="true"
+        android:contentDescription="@string/legs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
