@@ -20,27 +20,54 @@
         />
 
     <TextView
-        android:id="@+id/WelcomeHeader"
+        android:id="@+id/Welcome1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcomeLogin"
-        android:layout_marginTop="80dp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="#03506f"
-        android:textSize="62sp"
+        android:text="@string/welcome1"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/Welcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome2"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Welcome1" />
+
+    <TextView
+        android:id="@+id/Welcome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome3"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Welcome2" />
 
     <LinearLayout
         android:id="@+id/pins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/round_button1"
         android:layout_marginStart="44dp"
         android:layout_marginEnd="44dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/WelcomeHeader">
+        app:layout_constraintTop_toBottomOf="@id/Welcome3">
 
         <EditText
             android:id="@+id/pin1"
