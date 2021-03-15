@@ -3,60 +3,62 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:background="@drawable/login_gradient"
+    android:background="#222222"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="200dp"
-        android:layout_height="240dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/logo_temp"
+        android:background="@drawable/eyeleadlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <TextView
         android:id="@+id/Welcome1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome1"
+        android:text="swag"
         android:layout_marginTop="30dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <TextView
         android:id="@+id/Welcome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome2"
+        android:text="swag2"
         android:layout_marginTop="2dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Welcome1" />
+        app:layout_constraintTop_toBottomOf="@id/Welcome1"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <TextView
         android:id="@+id/Welcome3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome3"
+        android:text="swag3"
         android:layout_marginTop="2dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Welcome2" />
+        app:layout_constraintTop_toBottomOf="@id/Welcome2"
+        app:layout_constraintHorizontal_bias="0.5" />
 
 
     <LinearLayout
@@ -70,7 +72,8 @@
         android:background="@drawable/round_button1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Welcome3">
+        app:layout_constraintTop_toBottomOf="@id/Welcome3"
+        app:layout_constraintHorizontal_bias="0.5">
 
         <EditText
             android:id="@+id/pin1"
@@ -113,7 +116,7 @@
 
     </LinearLayout>
 
-    <android.widget.Button
+    <Button
         android:id="@+id/loginButton"
         android:layout_width="300dp"
         android:layout_height="60dp"

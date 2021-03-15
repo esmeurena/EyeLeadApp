@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:background="@drawable/login_gradient"
+    android:background="#222222"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".data.MainActivity">
+    tools:context=".MainActivity">
+
+
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="160dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/logo_temp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/eyeleadlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,10 +27,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#339989"
-        android:textSize="40sp"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo" />
@@ -36,12 +39,12 @@
         android:id="@+id/WelcomeLead1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcomeLead"
-        android:layout_marginTop="18dp"
+        android:text="The most futuristic"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#D7263D"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/WelcomeEye"
@@ -51,12 +54,12 @@
         android:id="@+id/WelcomeLead2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcomeLead2"
+        android:text="visual aid assistant"
         android:layout_marginTop="2dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#D7263D"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/WelcomeLead1"
@@ -67,12 +70,25 @@
         android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="260dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="60dp"
         android:background="@drawable/eye_walk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/WelcomeLead2"
         android:focusable="true"
-        android:contentDescription="@string/legs" />
+        android:contentDescription="swag3" />
+
+    <ImageView
+        android:id="@+id/click"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true"
+        android:contentDescription="swag3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

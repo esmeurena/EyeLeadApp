@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".MicActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Are you looking for"
+        android:textColor="#339989"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="something specific?"
+        android:textColor="#339989"
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@id/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ellipse"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/microphone"
+        android:contentDescription="swag"
+        android:layout_marginTop="40dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="215dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question2"/>
+
+    <TextView
+        android:id="@+id/EyeLead"
+        android:layout_width="34dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/eyeleadlogo1"
+        app:layout_constraintTop_toBottomOf="@id/EyeLeadLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/EyeLeadLogo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/eyeleadlogo2"
+        android:contentDescription="swag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/ellipse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/click"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="getSpeechInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true"
+        android:contentDescription="swag3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
