@@ -1,6 +1,6 @@
-##################################################################################################
+################################
 Welcome to Eyelead.
-##################################################################################################
+################################
 
 According to the CDC, in 2015 over 4 million people in the US were blind or visually impaired. By 2050, blindness and visual impairment are projected to affect almost 7 million people. For our Sac Hacks project, we wanted to use AI and Machine Learning to improve the lives of the visually impaired community and deliver the most futuristic visual aid assistant yet. Meet EyeLead.
 
@@ -8,7 +8,7 @@ EyeLead is an interactive AI assistant that helps people who are blind or visual
 
 You might ask, how are any of these apps any different from yours? After all, they include object recognition and have text-to-speech features. But the problem is that these aren't truly user-friendly for people who are blind. It's easy to evaluate them as a sighted person but try closing your eyes, open these apps, and... this is your life now. Yes, it can help you take a picture and say in a couple of words about what's in the picture. But that doesn't add to a blind person's livelihood and doesn't help them feel their environment like a sighted person can.
 
-##################################################################################################
+#################################
 
 To run the app:
 1.Download Android Studio.
