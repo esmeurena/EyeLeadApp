@@ -11,9 +11,13 @@ You might ask, how are any of these apps any different from yours? After all, th
 #################################
 
 To run the app:
+
 1.Download Android Studio.
+
 2.Clone app by copying HTTPS code and click "load github project" in Android Studio.
+
 3.Make sure you do File > Settings > Appearance & Behavior > System Settings > Android SDK and click on androud 6.0 all the way through Android 11.0 (and Android S Preview), then click "Apply" to download them all (app won't run without this step).
+
 4.Click the play button on the top of the screen or set up an external android phone. 
     -Without the external phone, some functionlities won't work, like the microphone.
     -To set up external phone: Go to settings in your phone and turn developer mode on, then turn USB debugging on.
